@@ -1,0 +1,22 @@
+
+
+.bandeau {
+    padding-top: 60px;
+    height: 223px;
+    width: 100%;
+    background-image: url('../../img/background-bandeau.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bandeau p {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 68px;
+    font-family: 'Montserrat';
+}
