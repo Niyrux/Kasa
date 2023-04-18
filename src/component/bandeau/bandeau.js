@@ -1,5 +1,6 @@
 import './bandeau.css'
 
+
 function Bandeau() {
     return (
         <div className="bandeau">

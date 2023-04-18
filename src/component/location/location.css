@@ -1,0 +1,25 @@
+.contain-location {
+    background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
+    padding: 60px 0;
+    max-width: 340px;
+    margin: auto;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.contain-location h2 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    text-align: left;
+}
+
+.container-global-location {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #F6F6F6;
+    border-radius: 25px;
+    margin-top: 50px;
+    grid-gap: 20px;
+}
