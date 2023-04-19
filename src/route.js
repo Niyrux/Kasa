@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Bandeau from "./component/bandeau/bandeau"
 import Location from './component/location/location';
+import './index.css'
 function MyRoute() {
     return (
         <div className="Route">
@@ -11,6 +12,10 @@ function MyRoute() {
                         <Location />
                     </>
                 } />
+                <Route path='location/:id' element={
+                    <>
+                    </>
+                }></Route>
             </Routes>
         </div>
     )

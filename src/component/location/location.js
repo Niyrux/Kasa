@@ -16,7 +16,7 @@ function LocationItem(props) {
     const { data } = props;
     return (
         <div className="contain-location">
-            <Link to={data.title}>
+            <Link to={'location/' + data.id}>
                 <div  >
                     <h2>{data.title}</h2>
                 </div>

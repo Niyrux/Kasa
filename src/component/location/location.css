@@ -1,11 +1,12 @@
 .contain-location {
     background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
-    padding: 60px 0;
-    max-width: 340px;
+    max-width: 300px;
     margin: auto;
     border-radius: 10px;
-    height: 100%;
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 20px;
 }
 
 .contain-location h2 {
@@ -13,6 +14,19 @@
     font-weight: 500;
     font-family: 'Montserrat';
     text-align: left;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contain-location a,
+.contain-location div {
+    display: flex;
+    color: white;
+    ;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .container-global-location {
@@ -21,5 +35,6 @@
     background-color: #F6F6F6;
     border-radius: 25px;
     margin-top: 50px;
-    grid-gap: 20px;
+    grid-gap: 50px 60px;
+    padding: 50px;
 }
