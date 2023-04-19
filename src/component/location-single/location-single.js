@@ -12,7 +12,7 @@ function LocationSingle() {
 
     return (
         <div>
-            <h1>{location.title}</h1>
+            <img src={location.cover} />
             <p>{location.description}</p>
             {/* Afficher d'autres détails de l'emplacement unique ici */}
         </div>

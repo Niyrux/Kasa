@@ -3,6 +3,8 @@ import Bandeau from "./component/bandeau/bandeau"
 import Fiabilite from "./component/dropdowns/fiabilite";
 import Location from './component/location/location';
 import LocationSingle from "./component/location-single/location-single";
+import NotFound from "./component/404/404"
+import Slider from "./component/slider/slider";
 import './index.css'
 function MyRoute() {
     return (
@@ -14,9 +16,11 @@ function MyRoute() {
                         <Location />
                     </>
                 } />
+
                 <Route path='/location/:id' element={
                     <>
                         <LocationSingle />
+                        <Slider />
                     </>
                 }></Route>
                 <Route path='/a-propos' element={
@@ -24,6 +28,7 @@ function MyRoute() {
                         <Fiabilite />
                     </>
                 }></Route>
+                <Route path='*' element={<NotFound />} />
             </Routes>
         </div>
     )
