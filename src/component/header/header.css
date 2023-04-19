@@ -3,6 +3,7 @@
     justify-content: space-between;
     padding: 40px 100px;
     max-width: 1240px;
+    margin: auto;
 }
 
 .App-header ul {

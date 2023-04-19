@@ -15,7 +15,7 @@ function Location() {
 function LocationItem(props) {
     const { data } = props;
     return (
-        <div className="contain-location">
+        <div className="contain-location" style={{ backgroundImage: `url(` + data.cover + `)` }}>
             <Link to={'location/' + data.id}>
                 <div  >
                     <h2>{data.title}</h2>
