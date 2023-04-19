@@ -1,9 +1,16 @@
+import './404.css'
+import { Link } from 'react-router-dom'
 
 function NotFound() {
     return (
-        <div>
-            <h1>Oops! You seem to be lost.</h1>
-            <p>Here are some helpful links:</p>
+        <div className="error404">
+            <div>
+                <h1>404</h1>
+                <p>Oups! La page que vous demandez n'existe pas.</p>
+            </div>
+            <div>
+                <Link to='/'> Retourner sur la page d'accueil</Link>
+            </div>
         </div>
     )
 }

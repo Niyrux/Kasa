@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Header from './component/header/header';
-import Bandeau from './component/bandeau/bandeau';
 import { BrowserRouter } from "react-router-dom"
 import MyRoute from './route';
 import Footer from './component/footer/footer';
