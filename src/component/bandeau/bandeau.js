@@ -1,10 +1,11 @@
 import './bandeau.css'
+import image from '../../img/logo_footer.png'
 
-
-function Bandeau() {
+function Bandeau(props) {
     return (
         <div className="bandeau">
-            <p>Chez vous, partout et ailleurs</p>
+            <img src={props.background}/>
+            <p>{props.title}</p>
         </div>
     );
 }
