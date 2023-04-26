@@ -18,3 +18,7 @@
     font-family: 'Montserrat';
     position: absolute;
 }
+
+.bandeau img {
+    width: 100%;
+}
