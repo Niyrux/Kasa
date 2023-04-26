@@ -5,17 +5,19 @@ import { useParams } from 'react-router-dom';
 function Tags() {
     const { id } = useParams();
     const location = locationsData.find(l => l.id === id);
-    const tags = location.tags
-    tags.forEach(tag => {
-        return <div>{tag}</div>
-    });
+    const tags = location.tags;
 
     if (!location) {
         return ' ';
     }
+
+    const tagElements = tags.map(tag => <div className='tag' key={tag}>{tag}</div>);
+
     return (
-        <div>{location.tags}</div>
-    )
+        <div>
+            {tagElements}
+        </div>
+    );
 }
 
 export default Tags;

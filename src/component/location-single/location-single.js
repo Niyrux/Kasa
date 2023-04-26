@@ -30,6 +30,8 @@ function LocationSingle() {
             </div>
             <Rating />
             <Tags />
+
+
         </div>
     );
 }
