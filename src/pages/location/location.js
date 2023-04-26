@@ -1,13 +1,11 @@
 import React from 'react'
-import Bandeau from '../../component/bandeau/bandeau';
-import Location from '../../component/location-boucle/location';
+import LocationSingle from '../../component/location-single/location-single';
 
 function Location() {
 
     return (
         <div>
             <LocationSingle />
-            <Slider />
         </div>
 
 

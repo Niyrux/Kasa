@@ -1,5 +1,3 @@
-
-
 .bandeau {
     padding-top: 60px;
     height: 223px;
@@ -18,4 +16,5 @@
     font-size: 48px;
     line-height: 68px;
     font-family: 'Montserrat';
+    position: absolute;
 }
