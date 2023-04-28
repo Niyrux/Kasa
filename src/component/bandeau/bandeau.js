@@ -1,5 +1,4 @@
 import './bandeau.css'
-import image from '../../img/logo_footer.png'
 
 function Bandeau(props) {
     return (

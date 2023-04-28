@@ -1,0 +1,10 @@
+.star {
+    object-fit: contain;
+    height: 24px;
+    width: 24px;
+}
+
+.stars {
+    display: flex;
+    gap: 0 5px;
+}

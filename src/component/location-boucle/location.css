@@ -42,3 +42,24 @@
 .contain-location {
     background-size: cover;
 }
+
+@media screen and (max-width: 1024px){
+    .container-global-location {
+        grid-template-columns: repeat(2,1fr);
+  
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .container-global-location {
+        grid-template-columns: repeat(1,1fr);
+        padding: 0px;
+        background-color: #ffffff;
+        margin-top: 20px;
+    }
+    .contain-location {
+        width:  calc(100% - 40px) ;
+        
+    }
+}

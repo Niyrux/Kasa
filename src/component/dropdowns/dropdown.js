@@ -1,16 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import image from '../../img/arrow.png'
 import './dropdown.css'
 
-function Fiabilite() {
+function Dropdown(props) {
 
-    const DropTop = document.querySelector('.drop-down-top');
-
+ 
 
     return (
         <div className="container-dropdown">
             <div className="drop-down-top">
-                <p>Fiabilité</p>
+                <p>{props.title}</p>
                 <img src={image} />
             </div>
             <div className="drop-down-bot"></div>
@@ -18,4 +17,4 @@ function Fiabilite() {
     )
 }
 
-export default Fiabilite
+export default Dropdown

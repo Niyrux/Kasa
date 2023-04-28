@@ -34,3 +34,23 @@
 .active {
     width: 100%;
 }
+
+.count {
+    position: absolute;
+    color: white;
+    bottom: 25px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+    .arrow-left,
+    .arrow-right {
+        width: 12px;
+        height: 20px;
+    }
+    .image {
+        height: 225px;
+    }
+}

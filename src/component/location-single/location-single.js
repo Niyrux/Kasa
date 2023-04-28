@@ -5,6 +5,8 @@ import NotFound from '../404/404';
 import Slider from '../slider/slider';
 import Rating from '../rating/rating';
 import Tags from '../tags/tags';
+import './location-single.css'
+import '../../index.css'
 
 function LocationSingle() {
     const { id } = useParams();
@@ -17,21 +19,21 @@ function LocationSingle() {
     return (
         <div>
             <Slider />
-            <div>
-                <div>
-                    <h2>{location.title}</h2>
-                    <p>{location.location}</p>
+            <div className='container-single'>
+                <div className='details'>
+                    <h2 className='nomarge'>{location.title}</h2>
+                    <p className='nomarge'>{location.location}</p>
+                    <Tags/>
                 </div>
 
-                <div>
-                    <p>{location.host.name}</p>
-                    <img src={location.host.picture} />
+                <div className='profil-host'>
+                    <div className='host'>
+                        <p>{location.host.name}</p>
+                        <img src={location.host.picture} />
+                    </div>
+                    <Rating /> 
                 </div>
             </div>
-            <Rating />
-            <Tags />
-
-
         </div>
     );
 }

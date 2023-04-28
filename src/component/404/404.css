@@ -25,7 +25,7 @@
     font-weight: 500;
     font-size: 36px;
     font-family: 'Montserrat';
-
+    text-align: center;
 }
 
 .error404 a {
@@ -33,4 +33,18 @@
     font-weight: 500;
     font-size: 18px;
     font-family: 'Montserrat';
+}
+
+@media screen and (max-width:768px) {
+.error404 h1 {
+    font-size: 96px;
+    line-height: 137px;
+}
+.error404 div:first-child p {
+    font-size: 18px;
+    width: 70%;
+}
+.error404 div:first-child {
+    margin-bottom: 100px;
+}
 }

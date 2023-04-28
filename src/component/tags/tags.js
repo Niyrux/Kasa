@@ -14,8 +14,8 @@ function Tags() {
     const tagElements = tags.map(tag => <div className='tag' key={tag}>{tag}</div>);
 
     return (
-        <div>
-            {tagElements}
+        <div  className='tags'>
+            {tagElements }
         </div>
     );
 }

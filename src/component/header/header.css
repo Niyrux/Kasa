@@ -27,3 +27,26 @@
     max-width: 210px;
     width: 100%;
 }
+@media screen and (max-width:1024px) {
+    .App-header {
+        padding: 40px 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .App-header {
+        padding: 10px 20px;
+        align-items: center;
+    }
+    .App-header ul {
+        gap: 0 20px
+    }
+    .App-header img {
+        max-width: 145px;
+        height: 47px;
+    }
+    .App-header ul a {
+    font-size: 12px;
+}
+}
+
