@@ -1,5 +1,5 @@
 import locationsData from '../../location.json';
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 
 function Tags() {

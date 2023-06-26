@@ -12,7 +12,7 @@ function Slider() {
     
     const image = imagesSlider.map((img, index) => {
         return <div key={index} className={index === current ? 'slide active' : 'slide'}>
-            {index === current && (<img className='image' src={img} />)
+            {index === current && (<img alt='appartement' className='image' src={img} />)
             }
           
         </div>
@@ -26,6 +26,7 @@ function Slider() {
     }
 
     const prevSlide = () => {
+        
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
 
@@ -36,12 +37,16 @@ function Slider() {
 
 
     return (
-        <section className="containerSlide">
-            <img className="arrow-right" src={arrowRight} onClick={nextSlide} />
-            {image}
-            <div className='count'>{current}/{length - 1}</div>
-            <img className="arrow-left" src={arrowLeft} onClick={prevSlide} />
-        </section>
+       <section className="containerSlide">
+  {length > 1 ? (
+    <>
+      <img className="arrow-right" alt='arrow-right' src={arrowRight} onClick={nextSlide} />
+      <img className="arrow-left" alt='arrow-left' src={arrowLeft} onClick={prevSlide} />
+    </>
+  ) : null}
+  {image}
+  <div className='count'>{current +1 }/{length }</div>
+</section>
     )
 }
 

@@ -53,4 +53,7 @@
     .image {
         height: 225px;
     }
+    .count {
+        display: none;
+    }
 }

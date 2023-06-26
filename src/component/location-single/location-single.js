@@ -7,11 +7,16 @@ import Rating from '../rating/rating';
 import Tags from '../tags/tags';
 import './location-single.css'
 import '../../index.css'
+import Dropdown from '../dropdowns/dropdown';
 
 function LocationSingle() {
     const { id } = useParams();
     const location = locationsData.find(l => l.id === id);
-
+    let equipements = location.equipments;
+    console.log(equipements)
+    equipements = equipements.map((equipemen) =>
+    <li>{equipemen}</li>
+    )
     if (!location) {
         return <NotFound />;
     }
@@ -29,9 +34,10 @@ function LocationSingle() {
                 <div className='profil-host'>
                     <div className='host'>
                         <p>{location.host.name}</p>
-                        <img src={location.host.picture} />
+                        <img alt='head-hosting' src={location.host.picture} />
                     </div>
                     <Rating /> 
+                   
                 </div>
             </div>
         </div>
