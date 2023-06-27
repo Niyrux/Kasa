@@ -10,13 +10,16 @@
     justify-content: space-between;
     padding: 10px 18px;
     border-radius: 5px;
+    align-items: center;
 }
+
 .drop-down-top p {
-margin: 0;
-color: white;
-font-family: 'Montserrat';
-font-size: 24px;
+    margin: 0;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 24px;
 }
+
 .drop-down-top img {
     object-fit: contain;
     width: 24px;
@@ -32,6 +35,5 @@ font-size: 24px;
 }
 
 .drop-down-bot {
-    border-radius:0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
 }
-

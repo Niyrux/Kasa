@@ -1,8 +1,8 @@
 import locationsData from '../../location.json';
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Pleine from '../../img/etoile-pleine.png';
-import Vide from '../../img/etoile-vide.png';
+import Pleine from '../../assets/img/etoile-pleine.png';
+import Vide from '../../assets/img/etoile-vide.png';
 import './rating.css'
 
 function Rating() {
@@ -24,9 +24,9 @@ function Rating() {
     }
 
     return (
-            <div className='stars'>
-                {stars}
-            </div>
+        <div className='stars'>
+            {stars}
+        </div>
     );
 }
 

@@ -1,5 +1,5 @@
 .contain-location {
-    max-width: 300px;
+    max-width: calc(300px - 40px);
     margin: auto;
     border-radius: 10px;
     width: 100%;
@@ -43,23 +43,26 @@
     background-size: cover;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .container-global-location {
-        grid-template-columns: repeat(2,1fr);
-  
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .container-global-location {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         padding: 0px;
         background-color: #ffffff;
         margin-top: 20px;
+        grid-gap: 20px 0;
     }
+
     .contain-location {
-        width:  calc(100% - 40px) ;
-        
+        width: calc(100% - 40px);
+        max-width: inherit;
+
     }
 }

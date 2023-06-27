@@ -13,10 +13,11 @@ function LocationSingle() {
     const { id } = useParams();
     const location = locationsData.find(l => l.id === id);
     let equipements = location.equipments;
-    console.log(equipements)
-    equipements = equipements.map((equipemen) =>
-    <li>{equipemen}</li>
+    equipements = equipements.map((equipemen, index) =>
+        <li key={index}>{equipemen} </li>
     )
+    let description = location.description;
+
     if (!location) {
         return <NotFound />;
     }
@@ -28,7 +29,7 @@ function LocationSingle() {
                 <div className='details'>
                     <h2 className='nomarge'>{location.title}</h2>
                     <p className='nomarge'>{location.location}</p>
-                    <Tags/>
+                    <Tags />
                 </div>
 
                 <div className='profil-host'>
@@ -36,8 +37,12 @@ function LocationSingle() {
                         <p>{location.host.name}</p>
                         <img alt='head-hosting' src={location.host.picture} />
                     </div>
-                    <Rating /> 
-                   
+                    <Rating />
+
+                </div>
+                <div className="container-dropdown-single">
+                    <Dropdown title={"Equipements"} content={equipements} />
+                    <Dropdown title={"Description"} content={description} />
                 </div>
             </div>
         </div>
