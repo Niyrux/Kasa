@@ -29,10 +29,13 @@
 
 .slide {
     display: flex;
+    transition: transform 3s ease-in-out;
 }
 
 .active {
     width: 100%;
+    transition: transform 3s ease-in-out;
+
 }
 
 .count {
@@ -45,14 +48,17 @@
 }
 
 @media screen and (max-width:768px) {
+
     .arrow-left,
     .arrow-right {
         width: 12px;
         height: 20px;
     }
+
     .image {
         height: 225px;
     }
+
     .count {
         display: none;
     }

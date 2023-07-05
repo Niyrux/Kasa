@@ -24,7 +24,7 @@ function Dropdown(props) {
           ref={arrowRef}
         />
       </div>
-      {isOpen && <div className="drop-down-bot"><p>{props.content}</p></div>}
+      {isOpen && <div className="drop-down-bot" style={{ backgroundColor: '#F6F6F6' }}><p>{props.content}</p></div>}
     </div>
   );
 }

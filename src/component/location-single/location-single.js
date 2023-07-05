@@ -12,15 +12,20 @@ import Dropdown from '../dropdowns/dropdown';
 function LocationSingle() {
     const { id } = useParams();
     const location = locationsData.find(l => l.id === id);
-    let equipements = location.equipments;
-    equipements = equipements.map((equipemen, index) =>
-        <li key={index}>{equipemen} </li>
-    )
-    let description = location.description;
 
     if (!location) {
         return <NotFound />;
     }
+
+    let equipements = location.equipments;
+    equipements = equipements.map((equipemen, index) =>
+        <li key={index}>{equipemen} </li>
+
+    )
+
+    let description = location.description;
+
+
 
     return (
         <div>
@@ -40,10 +45,11 @@ function LocationSingle() {
                     <Rating />
 
                 </div>
-                <div className="container-dropdown-single">
-                    <Dropdown title={"Equipements"} content={equipements} />
-                    <Dropdown title={"Description"} content={description} />
-                </div>
+
+            </div>
+            <div className="container-dropdown-single">
+                <Dropdown title={"Equipements"} content={equipements} />
+                <Dropdown title={"Description"} content={description} />
             </div>
         </div>
     );
